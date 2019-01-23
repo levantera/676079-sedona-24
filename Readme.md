@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Наталья Одарченко](https://up.htmlacademy.ru/htmlcss/24/user/676079).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Перейро](https://htmlacademy.ru/profile/perejro).
 
 ---
 
