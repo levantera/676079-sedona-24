@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<header class="main-header">
+  <nav class="main-navigation">
 
-  </body>
+    <ul class="site-navigation">
+      <li><a href="info.html">Информация</a></li>
+      <li><a href="photoandvideo.html">Фото и Видео</a></li>
+      <li>
+        <a class="main-header-logo"><img src="" width="" height="" alt="Логотип"></a><!-- для внутр страниц добавлю ссылку на главную -->
+      </li>
+      <li><a href="map.html">Карта штата</a></li>
+      <li><a href="hotels.html">Гостиницы</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <h1 class="visually-hidden">Седона</h1>
+  <img class="sedona-canyon" src="#" width="" height="" alt="Каньон в Седоне"><!-- я правильно понимаю, что фото каньона через css уходит в фон? -->
+  <section class="welcome-slogan">
+    <h2 class="visually-hidden">Welcome</h2>
+    <p class="welcome">Welcome</p>                     <!--Если эти надписи идут просто через красивые подключаемые шрифты, то я задаю им разные классы-->
+    <p class="gorgeous">- to the gorgeous -</p>        <!--Если это изображения - то я не уверена, как их подключать))-->
+    <p class="sedona">Sedona</p>
+    <p class="canyon">"Because the Grand Canyon sucks!"</p>
+  </section>
+
+  <section class="slogan">
+    <h2>
+      Седона - небольшой городок в Аризоне,<br>
+      заслуживающий большего!
+    </h2>
+    <p>Рассмотрим 5 причин, по которым Седона лучше, чем Гранд Каньон!</p>
+  </section>
+
+  <section class="reasons">
+    <ul class="main-reasons">
+      <li>
+        <h3 class="white">Настоящий городок</h3>
+        <span class="white">№1</span>
+        <p class="white">Седона - не городок для туристов, там живет своя жизнь</p>
+      </li>
+      <li>
+        <h3 class="white">Там есть мост дьявола</h3>
+        <span class="white">№2</span>
+        <p class="white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      </li>
+      <li>
+        <h3>Небольшая площадь</h3>
+        <span>№3</span>
+        <p>Все достопримечательности находятся очень близко</p>
+      </li>
+      <li>
+        <h3>Красивая дорога</h3>
+        <span>№4</span>
+        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </li>
+      <li>
+        <h3>Мало туристов</h3>
+        <span>№5</span>
+        <p>Большинство едет в Гранд-Каньон и толпятся там</p>
+      </li>
+    </ul>
+
+    <!-- С двумя фото я совсем запуталась - они очевидно не контентные, значит мы не вставляем их через img? вставляем потом в css?
+    тогда в html нужно вставить 2 блока, в которые потом подставим background-image?
+    <div class="block real-life"></div>
+    <div class="block devils-bridge"></div>
+    -->
+
+    <ul class="more-reasons">
+      <li>
+        <h3>Жилье</h3>
+        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </li>
+      <li>
+        <h3>Еда</h3>
+        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      </li>
+      <li>
+        <h3>Сувениры</h3>
+        <p>Не только китайского, но и местного производства!</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="interested-in">
+    <img class="sedona-map" src="#" width="" height="" alt="Карта Седоны"> <!-- я правильно понимаю, что эту карту мы уже через css на фон убираем? -->
+    <b>Заинтересовались?</b>
+    <p>Укажите предполагаемые даты поездки,<br>
+      и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <!-- Здесь будет форма поиска <p>Поиск гостиницы в Седоне</p> -->
+
+  </section>
+
+  <footer class="main-footer">
+    <p class="hashtag">#visitsedona</p>
+    <div class="footer-social">
+      <ul>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Youtube</a></li>
+      </ul>
+    </div>
+
+    <p class="footer-copyright">
+        <b>website by</b>
+        <a class="button" href="https://htmlacademy.ru">HTML academy</a>
+    </p>
+  </footer>
+</main>
+</body>
 </html>
