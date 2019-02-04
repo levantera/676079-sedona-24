@@ -8,7 +8,7 @@
 
 <header class="main-header">
   <nav class="main-navigation">
-
+    <!-- почему тут имг встал в одну строку с ссылкой? перенеси на новую строку и оттабулируй -->
     <a class="main-header-logo"><img src="img/logo-sedona.svg" width="138" height="71" alt="Логотип Седоны"></a>
 
     <ul class="site-navigation">
@@ -24,9 +24,12 @@
   <!-- Это контентное или фоновое изображение? Мне кажется, контентное, но я сомневаюсь
   <img class="sedona-canyon" src="img/sedona-main-canyon.png" width="1200" height="800" alt="Каньон в Седоне">
   -->
+  <!-- фото гор - декоративное(фоновое) -->
+  
   <section class="welcome-slogan">
     <h1 class="visually-hidden">Седона</h1>
     <h2 class="visually-hidden">Welcome</h2>
+    <!-- Зачем тут два заголовка? Оставь h1 только и сюда (в Эту секцию) перенеси img intro-welcome , a из секции slogan убери имг -->
   </section>
 
   <section class="slogan">
@@ -37,9 +40,12 @@
 
   <section class="reasons">
       <div class="real-life-reason">
-        <h3 class="white">Настоящий городок</h3>
-        <span class="white">№1</span>
-        <p class="white">Седона - не городок для туристов, там живет своя жизнь</p>
+        <!-- добавь общий Div родитель -->
+          <h3 class="white">Настоящий городок</h3>
+          <span class="white">№1</span>
+          <p class="white">Седона - не городок для туристов, там живет своя жизнь</p>
+        <!-- конец общего Diva Родителя -->
+        <!-- Добавь тут пустой див еще, чуть позже мы вставим фоном в этот див картинку -->
       </div>
 
     <ul class="main-reasons">
@@ -58,9 +64,12 @@
     </ul>
 
     <div class="devils-bridge-reason">
-      <h3 class="white">Там есть мост дьявола</h3>
-      <span class="white">№2</span>
-      <p class="white">Да, по нему можно пройти! Если вы конечно осмелитесь</p>
+      <!-- добавь общий Div родитель -->
+        <h3 class="white">Там есть мост дьявола</h3>
+        <span class="white">№2</span>
+        <p class="white">Да, по нему можно пройти! Если вы конечно осмелитесь</p>
+      <!-- конец общего Diva Родителя -->
+      <!-- Добавь тут пустой див еще, чуть позже мы вставим фоном в этот див картинку -->
     </div>
 
     <ul class="more-reasons">
@@ -87,12 +96,15 @@
 
   <section class="interested-in">
     <img class="sedona-map" src="#" width="" height="" alt="Карта Седоны"> <!-- я правильно понимаю, что эту карту мы уже через css на фон убираем? -->
+    <!-- да, уберем, но она не тут должна быть -->
     <b>Заинтересовались?</b>
     <p>Укажите предполагаемые даты поездки,<br>
       и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <!-- Здесь будет форма поиска <p>Поиск гостиницы в Седоне</p> -->
     <button class="button" type="submit">Поиск гостиницы в Седоне</button>
   </section>
+  
+  <!-- Вот тут будет карта, создай тут секцию с классом map, положи в нее заголовок скрытый и потом ун ее фоном будет sedona-map, а в предыдущей секции убери имг -->
 
   <footer class="main-footer">
     <p class="hashtag">#visitsedona</p>
