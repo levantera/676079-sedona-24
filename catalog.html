@@ -26,6 +26,7 @@
     <h2 class="visually-hidden">Поиск отелей</h2>
 
     <form class="hotels-search-form" action="https://echo.htmlacademy.ru" method="get">
+        <!-- не забывай про форматирование. legend, ul вложены в fieldset - значит их нужно оттабулировать -->
         <fieldset>
         <legend>ИНФРАСТРУКТУРА:</legend>
         <ul>
@@ -87,6 +88,7 @@
 
 
   <section class="searching-results">
+    <!-- h1 должен быть только один на странице -->
     <h1 class="visually-hidden">РЕЗУЛЬТАТЫ ПОИСКА</h1>
     <h2 class="founded">НАЙДЕНО: 3</h2>
 
@@ -98,6 +100,7 @@
     </ul>
 
     <div class="sorting-arrows">
+      <!-- span не надо, сразу a -->
       <span class="arrow-up">
         <a class="arrow-up" aria-label="Сортировка по возрастанию"></a>
       </span>
@@ -109,7 +112,6 @@
 
 
       <li class="hotel-item">
-        <!-- Какие-то еще коррективы нужны?-->
         
         <div class="hotel-photo">
           <img src="img/amara-resort.jpg" width="135" height="90" alt="Гостиница Амара">
@@ -118,16 +120,19 @@
         <div class="hotel-description">
           <h3 class="hotel-name">AMARA RESORT&SPA</h3>
             <div>
+              <!-- h3 -->
               <h4>гостиница</h4>
               <a href='#' class='button'>подробнее</a>
             </div>
             <div>
+              <!-- h3 -->
               <h4>от 4000 р.</h4>
               <a href='#' class='button'>забронировать</a>
             </div>  
          </div>
 
         <div class="rating-stars">
+          <!-- не нужно тут писать этот p -->
           <p class="aria-label">Оценка уровня отеля - четыре звезды</p>
           <ul class="stars">
             <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
