@@ -26,8 +26,7 @@
     <h2 class="visually-hidden">Поиск отелей</h2>
 
     <form class="hotels-search-form" action="https://echo.htmlacademy.ru" method="get">
-        <!-- не забывай про форматирование. legend, ul вложены в fieldset - значит их нужно оттабулировать -->
-        <fieldset>
+      <fieldset>
         <legend>ИНФРАСТРУКТУРА:</legend>
         <ul>
           <li class="filter-option">
@@ -43,9 +42,9 @@
             <label for="wifi">WI-FI</label>
           </li>
         </ul>
-        </fieldset>
+      </fieldset>
 
-        <fieldset>
+      <fieldset>
         <legend>ТИП ЖИЛЬЯ:</legend>
         <ul>
           <li class="filter-option">
@@ -61,11 +60,11 @@
             <label for="apartments">АПАРТАМЕНТЫ</label>
           </li>
         </ul>
-        </fieldset>
+      </fieldset>
 
       <fieldset>
-      <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
-      <div class="price-range">
+       <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
+       <div class="price-range">
         <ul class="price-range-list">
 
           <li class="price-range-min">
@@ -79,8 +78,8 @@
           </li>
         </ul>
         <input type="range" name="price-range-full" min="0" max="3000" step="10">
-      <button type="submit" class="range-result button">Показать</button>
-      </div>
+        <button type="submit" class="range-result button">Показать</button>
+       </div>
       </fieldset>
     </form>
   </section>
@@ -88,9 +87,8 @@
 
 
   <section class="searching-results">
-    <!-- h1 должен быть только один на странице -->
-    <h1 class="visually-hidden">РЕЗУЛЬТАТЫ ПОИСКА</h1>
-    <h2 class="founded">НАЙДЕНО: 3</h2>
+    <h2 class="visually-hidden">РЕЗУЛЬТАТЫ ПОИСКА</h2>
+    <h3 class="founded">НАЙДЕНО: 3</h3>
 
     <p class="sort-by">СОРТИРОВКА:</p>
     <ul class="hotels-sorting">
@@ -100,13 +98,11 @@
     </ul>
 
     <div class="sorting-arrows">
-      <!-- span не надо, сразу a -->
-      <span class="arrow-up">
+
         <a class="arrow-up" aria-label="Сортировка по возрастанию"></a>
-      </span>
-      <span class="arrow-down">
+
         <a class="arrow-down" aria-label="Сортировка по убыванию"></a>
-      </span>
+
     </div>
     <ul class="hotels-choice">
 
@@ -120,20 +116,16 @@
         <div class="hotel-description">
           <h3 class="hotel-name">AMARA RESORT&SPA</h3>
             <div>
-              <!-- h3 -->
-              <h4>гостиница</h4>
+              <h3>гостиница</h3>
               <a href='#' class='button'>подробнее</a>
             </div>
             <div>
-              <!-- h3 -->
-              <h4>от 4000 р.</h4>
+              <h3>от 4000 р.</h3>
               <a href='#' class='button'>забронировать</a>
             </div>  
          </div>
 
         <div class="rating-stars">
-          <!-- не нужно тут писать этот p -->
-          <p class="aria-label">Оценка уровня отеля - четыре звезды</p>
           <ul class="stars">
             <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
             <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
@@ -157,7 +149,6 @@
         </div>
 
         <div class="rating-stars">
-          <p class="aria-label">Оценка уровня отеля - три звезды</p>
           <ul class="stars">
             <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
             <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
@@ -180,7 +171,6 @@
         </div>
 
         <div class="rating-stars">
-          <p class="aria-label">Оценка уровня отеля - две звезды</p>
           <ul class="stars">
             <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
             <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>

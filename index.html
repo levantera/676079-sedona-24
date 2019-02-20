@@ -21,13 +21,11 @@
 </header>
 
 <main>
-  <!-- удали div.sedona-main-canyon :) Зачем он тут? фон гор будет у секции welcome-slogan -->
-  <div class="sedona-main-canyon" aria-label="фото гор каньона Седоны">
-  </div>
 
   <section class="welcome-slogan">
     <h1 class="visually-hidden">Седона</h1>
     <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать!">
+    <!--фон гор welcome-slogan -->
   </section>
 
   <section class="slogan">
@@ -68,7 +66,6 @@
       </div>
       <div class="devils-bridge-reason-background"> </div>
     </div>
-
     <ul class="more-reasons">
       <li>
         <h3>Небольшая площадь</h3>
@@ -86,7 +83,6 @@
         <p>Большинство едет в Гранд-Каньон и толпятся там</p>
       </li>
     </ul>
-
   </section>
 
 
@@ -95,8 +91,37 @@
     <b>Заинтересовались?</b>
     <p>Укажите предполагаемые даты поездки,<br>
       и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <!-- Здесь будет форма поиска <p>Поиск гостиницы в Седоне</p> -->
+
     <button class="button" type="submit">Поиск гостиницы в Седоне</button>
+    <form class="hotel-searching" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма для поиска гостиницы в Седоне">
+
+      <div class="hotel-searching-arrival">
+        <label for="date-of-arrival">Дата заезда:</label>
+        <input id="date-of-arrival" type="text" name="date-of-arrival" value="24 апреля 2017" placeholder="" aria-label="Выбор даты заезда">
+        <button class="calendar" type="button" aria-label="Календарь"></button>
+      </div>
+
+      <div class="hotel-searching-departure">
+        <label for="date-of-departure">Дата выезда:</label>
+        <input id="date-of-departure" type="text" name="date-of-departure" value="4 июля 2017" placeholder="" aria-label="Выбор даты выезда">
+        <button class="calendar" type="button" aria-label="Календарь"></button>
+      </div>
+
+      <div class="hotel-searching-adults">
+        <label for="adults-amount">Количество взрослых:</label>
+        <button class="amount-button" type="button">-</button>
+        <input id="adults-amount" type="number" name="adults-amount" step="1" value="2" aria-label="Выбор количества взрослых">
+        <button class="amount-button" type="button">+</button>
+      </div>
+
+      <div class="hotel-searching-kids">
+        <label for="kids-amount">Количество детей:</label>
+        <button class="amount-button" type="button">-</button>
+        <input id="kids-amount" type="number" name="kids-amount" step="1" value="0" aria-label="Выбор количества детей">
+        <button class="amount-button" type="button">+</button>
+      </div>
+      <button class="button" type="submit" aria-label="Кнопка для старта поиска гостиниц">НАЙТИ</button>
+    </form>
   </section>
 
   <section class="map">
