@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -25,7 +27,6 @@
   <section class="welcome-slogan">
     <h1 class="visually-hidden">Седона</h1>
     <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать!">
-    <!--фон гор welcome-slogan -->
   </section>
 
   <section class="slogan">
@@ -92,8 +93,8 @@
     <p>Укажите предполагаемые даты поездки,<br>
       и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
-    <button class="button" type="submit">Поиск гостиницы в Седоне</button>
-    <form class="hotel-searching" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма для поиска гостиницы в Седоне">
+    <button class="button sedona-hotel-search" type="submit">Поиск гостиницы в Седоне</button>
+    <form class="hotel-searching-form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма для поиска гостиницы в Седоне">
 
       <div class="hotel-searching-arrival">
         <label for="date-of-arrival">Дата заезда:</label>
@@ -129,15 +130,15 @@
   </section>
 
   <footer class="main-footer">
-    <p class="hashtag">#visitsedona</p>
+    <p class="main-footer-hashtag">#visitsedona</p>
       <ul>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
+          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="17" height="15" alt="Facebook"></a></li>
+          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
+          <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTuBe"></a></li>
       </ul>
     <p class="footer-copyright">
         <b>website by</b>
-        <a class="button" href="https://htmlacademy.ru">HTML academy</a>
+        <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="37" alt="HTML Academy"></a>
     </p>
   </footer>
 </main>
