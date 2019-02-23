@@ -35,6 +35,7 @@
   </section>
 
   <section class="reasons">
+     <!-- h2.vissualy-hidden 'причины посетить сдеону' -->
       <div class="real-life-reason">
         <div class="reason-description">
           <h3 class="white">Настоящий городок</h3>
@@ -67,6 +68,7 @@
       </div>
       <div class="devils-bridge-reason-background"> </div>
     </div>
+    
     <ul class="more-reasons">
       <li>
         <h3>Небольшая площадь</h3>
@@ -87,17 +89,19 @@
   </section>
 
 
-
   <section class="interested-in">
     <b>Заинтересовались?</b>
     <p>Укажите предполагаемые даты поездки,<br>
       и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-
+  
+    <!-- почему сабмит? эта кнопка не отправляет же форму, а просто взаимодействует с юзером, в данном случае показывает\скрывает форму
+    значит тайп баттон. -->
     <button class="button sedona-hotel-search" type="submit">Поиск гостиницы в Седоне</button>
+    
     <form class="hotel-searching-form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма для поиска гостиницы в Седоне">
-
       <div class="hotel-searching-arrival">
         <label for="date-of-arrival">Дата заезда:</label>
+        <!-- Пустой плейсхолдер оставлять не надо. не только тут, а везде если чо) -->
         <input id="date-of-arrival" type="text" name="date-of-arrival" value="24 апреля 2017" placeholder="" aria-label="Выбор даты заезда">
         <button class="calendar" type="button" aria-label="Календарь"></button>
       </div>
