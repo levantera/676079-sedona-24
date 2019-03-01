@@ -1,13 +1,14 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: bold;
   color: #333333;
   text-transform: uppercase;
   background-color: #ffffff;
+  width: 1200px;
+  min-height: 2762px;
 }
 
 .visually-hidden {
@@ -21,17 +22,54 @@ body {
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
 }
 
+
 .main-navigation {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 1200px;
+  min-height: 55px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0 auto;
   padding: 0;
   font-size: 14px;
-  line-height: 26px;
+  vertical-align: middle;
+}
+
+
+.site-navigation {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 75px;
+  font-weight: bold;
+}
+
+.site-navigation li {
+  width: 20%;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+}
+
+
+.site-navigation a:active {
   color: #000000;
 }
+
 
 .main-navigation a {
   color: #000000;
@@ -44,12 +82,39 @@ a {
   background-color: #81b3d2;
 }
 
+.main-header-logo {
+  width: 140px;
+  height: 71px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-.welcome-slogan {
-  background-color: #81b3d2;
-  background-image: url("../img/sedona-main-canyon.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.sedona-main-canyon {
+  background-image: url(../img/sedona-main-canyon.png);
+  background-color: #88b7d5;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 60px 0 50px;
+  margin: 0 auto;
+  min-height: 216px;
+}
+
+.slogan h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.slogan p {
 }
 
 .main-navigation ul {
@@ -60,17 +125,69 @@ a {
   list-style: none;
 }
 
-.slogan h2 {
-  font-size: 21px;
-  line-height: 28px;
-  font-weight: bold;
-  color: #000000;
+
+.real-life-reason {
+
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-image: url("../img/real-life.jpg");
+  background-color: #E2D2D1;
+  background-position: bottom right;
 }
 
-.interested-in b {
+.reason-description {
+  background-color: #81b3d2;
+  color: #FFF;
+  width: 310px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+
+.devils-bridge-reason {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  background-image: url("../img/devils-bridge.png");
+  background-color: #EEB69F;
+  background-position: bottom left;
+}
+
+
+.main-reasons {
+  display: flex;
+}
+
+.reason-with-logo {
+  width: 300px;
+  padding: 160px 50px;
+  text-align: center;
+}
+
+.reason-with-logo h3 {
+  font-size: 21px;
+  width: 120px;
+  margin: 0px auto;
+}
+
+
+.interested-in p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.interested-in h2 {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
+  text-align: center;
   color: #000000;
   background-color: #ffffff;
 }
@@ -86,12 +203,54 @@ a {
   cursor: pointer;
 }
 
+
+.more-reasons {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.add-reason {
+  text-align: center;
+  margin-bottom: 62px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  padding-left: 59px;
+  padding-right: 61px;
+  background-color: #eeeeee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .button:hover {
   background-color: #669ec0;
 }
 
+
+
+
 .sedona-hotel-search {
   background-color: #766357;
+  font-size: 21px;
+  font-style: normal;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .sedona-hotel-search:hover {
@@ -142,6 +301,22 @@ a {
   color: #8f8681;
   background-color: #503e33;
 }
+
+
+
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding-left: 120px;
+  padding-right: 80px;
+}
+
+
+
+
 
 .social-button img {
   width: 48px;
