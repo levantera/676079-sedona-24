@@ -31,7 +31,6 @@ a {
   text-decoration: none;
 }
 
-
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -45,7 +44,6 @@ a {
   font-size: 14px;
   vertical-align: middle;
 }
-
 
 .site-navigation {
   margin: 0;
@@ -65,11 +63,9 @@ a {
   margin-left: auto;
 }
 
-
 .site-navigation a:active {
   color: #000000;
 }
-
 
 .main-navigation a {
   color: #000000;
@@ -125,7 +121,6 @@ a {
   list-style: none;
 }
 
-
 .real-life-reason {
 
   display: flex;
@@ -146,7 +141,6 @@ a {
   padding-right: 48px;
 }
 
-
 .devils-bridge-reason {
   display: flex;
   flex-direction: row-reverse;
@@ -155,7 +149,6 @@ a {
   background-color: #EEB69F;
   background-position: bottom left;
 }
-
 
 .main-reasons {
   display: flex;
@@ -172,7 +165,6 @@ a {
   width: 120px;
   margin: 0px auto;
 }
-
 
 .interested-in p {
   font-size: 14px;
@@ -203,7 +195,6 @@ a {
   cursor: pointer;
 }
 
-
 .more-reasons {
   display: flex;
   list-style: none;
@@ -221,28 +212,9 @@ a {
   background-color: #eeeeee;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .button:hover {
   background-color: #669ec0;
 }
-
-
-
 
 .sedona-hotel-search {
   background-color: #766357;
@@ -302,8 +274,6 @@ a {
   background-color: #503e33;
 }
 
-
-
 .main-footer {
   display: flex;
   flex-direction: row;
@@ -314,33 +284,228 @@ a {
   padding-right: 80px;
 }
 
-
-
-
-
-.social-button img {
-  width: 48px;
-  height: 48px;
-  background-color: #81b3d2;
-}
-
 .main-footer ul {
   list-style: none;
 }
 
-.main-footer-hashtag {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #000000;
+.social-links {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 22px;
 }
 
-.footer-copyright img {
-  width: 108px;
-  height: 37px;
-}
-
-.footer-copyright img:hover {
+.social-links img {
+  width: 22px;
+  height: 22px;
+  padding: 13px;
+  margin: 0px 2px;
+  text-align: center;
+  vertical-align: middle;
   background-color: #81b3d2;
 }
 
+.social-links li:hover img {
+  background-color: #669ec0
+}
+
+.social-link li:active img {
+  background-color: #5496bd
+}
+
+.social-button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-footer-hashtag {
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+}
+
+.footer-copyright b {
+  font-weight: 500;
+}
+.logo-html {
+  vertical-align: middle;
+  background: url("../img/logo-html-main.png");
+  display: inline-block;
+  width: 115px;
+  height: 41px;
+  margin-left: 4px;
+}
+
+
+.logo-html:hover {
+  background: url("../img/blue-logo.png");
+
+}
+
+.logo-html:active {
+  background: url("../img/grey-logo.png");
+}
+
+/** CSS catalog (отели) **/
+
+.searching-results {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px 70px 29px 70px;
+  border: 1px solid #EEE;
+}
+
+.founded {
+  margin: 0px;
+  margin-right: 20px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.sort-by {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 2px;
+  margin-left: 30px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 21px;
+  margin-right: 40px;
+}
+
+.hotels-sorting {
+  flex-grow: 1;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hotels-sorting li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 28px;
+}
+
+.sorting-by {
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.arrow-down {
+  margin-left: 10px;
+}
+
+.hotel-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 29px 70px 25px 72px;
+}
+
+.hotel-photo {
+  margin-top: 1px;
+}
+
+.hotel-description{
+  margin-left: 30px;
+  flex-grow: 1;
+}
+
+.hotel-name{
+  font-size: 21px;
+  line-height: 19px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.hotel-name:hover {
+  color: #81b3d2
+}
+
+.hotel-name:active {
+  color: #cacaca
+}
+
+.brief-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.from,
+.type-info p {
+  margin: 7px 0px 15px 0px;
+}
+
+.more-info {
+  color: #ffffff;
+  background-color: #81b3d2;
+  padding: 5px 17px;
+}
+
+.more-info:hover {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.more-info:active {
+  color: #ffffff;
+  background-color: #5496bd;
+}
+
+.price-book {
+  margin-left: 5px;
+}
+
+.button-brown {
+  padding: 5px 17px;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.button-brown:hover {
+  color: #ffffff;
+  background-color: #604e43;
+}
+
+.button-brown:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+.rating-stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stars {
+  list-style: none;
+  margin: 0px;
+  margin-left: 4px;
+  padding: 0px;
+  text-align: right;
+  display: inline-block;
+}
+
+.star-icon {
+  list-style: none;
+  margin-left: 4px;
+  display: inline-block;
+}
+
+.rating {
+  background-color: #F2F2F2;
+  margin: 0px;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  line-height: 10px;
+  text-align: center;
+}

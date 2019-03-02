@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Hotels</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -86,45 +87,49 @@
   </section>
 
 
-
   <section class="searching-results">
     <h2 class="visually-hidden">Результаты поиска</h2>
     <h3 class="founded">Найдено: 3</h3>
 
     <p class="sort-by">Сортировка:</p>
     <ul class="hotels-sorting">
-      <li class="sorting-by-price"> <a href="#">по цене</a></li>
-      <li class="sorting-by-type"> <a href="#">по типу</a></li>
-      <li class="sorting-by-rating"> <a href="#">по рейтингу</a></li>
+      <li class="sorting-by price"> <a href="#">по цене</a></li>
+      <li class="sorting-by type"> <a href="#">по типу</a></li>
+      <li class="sorting-by rating"> <a href="#">по рейтингу</a></li>
     </ul>
 
     <div class="sorting-arrows">
-        <a class="arrow-up" aria-label="Сортировка по возрастанию"></a>
-        <a class="arrow-down" aria-label="Сортировка по убыванию"></a>
+        <a class="arrow-up" aria-label="Сортировка по возрастанию"><img src="img/arrow-up.png" alt="Сортировка по возрастанию" width="11" height="10"></a>
+        <a class="arrow-down" aria-label="Сортировка по убыванию"><img src="img/arrow-down-blue.png" alt="Сортировка по убыванию" width="11" height="10"></a>
     </div>
+  </section>
+
     <ul class="hotels-choice">
-
-
       <li class="hotel-item">
-        
         <div class="hotel-photo">
-          <img src="img/amara-resort.jpg" width="135" height="90" alt="Гостиница Амара">
+          <img class="preview" src="img/amara-resort.jpg" width="135" height="90" alt="Гостиница Амара">
         </div>
 
         <div class="hotel-description">
           <h3 class="hotel-name">Amara Resort&Spa</h3>
-          <p>Гостиница</p>
-          <p>от 4000 р.</p>
-          <button class="button" type="submit" a="href=#">Подробнее</button>
-          <button class="button-brown" type="submit" a="href=#">Забронировать</button>
-         </div>
+          <div class="brief-info">
+            <div class="type-info">
+              <p>Гостиница</p>
+              <button class="button more-info" type="submit" a="href=#">Подробнее</button>
+            </div>
+            <div class="price-book">
+              <p class="from">от 4000 р.</p>
+              <button class="button-brown" type="submit" a="href=#">Забронировать</button>
+            </div>
+          </div>
+        </div>
 
         <div class="rating-stars">
           <ul class="stars">
-            <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-            <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-            <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-            <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
+            <li class="star-icon"><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
+            <li class="star-icon"><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
+            <li class="star-icon"><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
+            <li class="star-icon"><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
           </ul>
           <span class="rating">Рейтинг: 8,5</span>
         </div>
@@ -132,21 +137,28 @@
 
       <li class="hotel-item">
         <div class="hotel-photo">
-          <img src="img/quall-inn.jpg" width="135" height="90" alt="Отель Дезерт">
+          <img class="preview" src="img/quall-inn.jpg" width="135" height="90" alt="Отель Дезерт">
         </div>
+
         <div class="hotel-description">
           <h3 class="hotel-name">Desert Quall Inn</h3>
-          <p>Мотель</p>
-          <p>от 3000 р.</p>
-          <button class="button" type="submit" a="href=#">Подробнее</button>
-          <button class="button-brown" type="submit" a="href=#">Забронировать</button>
+          <div class="brief-info">
+            <div class="type-info">
+              <p>Мотель</p>
+              <button class="button more-info" type="submit" a="href=#">Подробнее</button>
+            </div>
+            <div class="price-book">
+              <p class="from">от 3000 р.</p>
+              <button class="button-brown" type="submit" a="href=#">Забронировать</button>
+            </div>
+          </div>
         </div>
 
         <div class="rating-stars">
           <ul class="stars">
-            <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-            <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-            <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
+            <li class="star-icon"><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
+            <li class="star-icon"><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
+            <li class="star-icon"><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
           </ul>
           <span class="rating">Рейтинг: 8,9</span>
         </div>
@@ -154,38 +166,44 @@
 
       <li class="hotel-item">
         <div class="hotel-photo">
-          <img src="img/poco-diablo.jpg" width="135" height="90" alt="Апартаменты Поко Диабло">
+          <img class="preview" src="img/poco-diablo.jpg" width="135" height="90" alt="Апартаменты Поко Диабло">
         </div>
+
         <div class="hotel-description">
           <h3 class="hotel-name">Villas at Poco Diablo</h3>
-          <p>Апартаменты</p>
-          <p>от 2000 р.</p>
-          <button class="button" type="submit" a="href=#">Подробнее</button>
-          <button class="button-brown" type="submit" a="href=#">Забронировать</button>
+          <div class="brief-info">
+            <div class="type-info">
+              <p>Апартаменты</p>
+              <button class="button more-info" type="submit" a="href=#">Подробнее</button>
+            </div>
+            <div class="price-book">
+              <p class="from">от 2000 р.</p>
+              <button class="button-brown" type="submit" a="href=#">Забронировать</button>
+            </div>
+          </div>
         </div>
 
         <div class="rating-stars">
           <ul class="stars">
-            <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-            <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
+            <li class="star-icon"><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
+            <li class="star-icon"><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
           </ul>
           <span class="rating">Рейтинг: 9.2</span>
         </div>
       </li>
     </ul>
-  </section>
 </main>
 
 <footer class="main-footer">
   <p class="main-footer-hashtag">#visitsedona</p>
-  <ul>
+  <ul class="social-links">
     <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
     <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
     <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTuBe"></a></li>
   </ul>
   <p class="footer-copyright">
     <b>website by</b>
-    <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="36" alt="HTML Academy"></a>
+    <a href="https://htmlacademy.ru" title="HTMLAcademy" class="button logo-html"></a>
   </p>
 </footer>
 </body>
